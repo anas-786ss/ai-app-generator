@@ -12,5 +12,6 @@ class TaskRequest(BaseModel):
     round: int
     nonce: str
     brief: str
-    evaluation_url: str  # Corrected field name
+    checks: List[str] = []
+    evaluation_url: str
     attachments: Optional[List[Attachment]] = []
