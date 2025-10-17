@@ -49,7 +49,7 @@ class GitHubClient:
             except GithubException as e:
                 if e.status == 404:
                     try:
-                        repo = self.user.create_repo(name=repo_name, private=private, auto_init=False)  # Disable auto_init
+                        repo = self.user.create_repo(name=repo_name, private=private, auto_init=False)
                         logger.info(f"Repository created successfully", extra={"repo_name": repo_name, "repo_url": repo.html_url})
                         return repo
                     except GithubException as e:
