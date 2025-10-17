@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+PyGithub
+python-dotenv
+tenacity
+python-json-logger
